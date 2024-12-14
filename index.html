@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- daisy --> 
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <style>
+            .noto-sans{
+            font-family: "Noto Sans", sans-serif; }
+        </style>
+
+    <title>Food Recipe</title>
+</head>
+<body class="noto-sans">
+    <main class="w-11/12 mx-auto">
+        <header>
+            <div class="flex justify-center items-center p-4">
+                <h1 class=" pt-4 text-center text-4xl bg-amber-800 inline-block items-center p-2 rounded-md">Tomy Aymee Restaurant</h1>
+            </div>
+               
+            <nav class="mt-6 lg:flex justify-between space-y-4 text-center">
+              <h1 class="text-2xl border inline-block bg-amber-700 text-white p-2 rounded-lg">
+                <span class="text-6xl text-slate-600 font-semibold">F</span>ood Recipe</h1>
+            
+            </nav>
+              
+        </header>
+        <body>
+            <div class="grid grid-cols-5">
+                <section class="col-span-1 mt-4">
+                    <div class="flex flex-col">
+                        <label for="food-category" class="mb-2 text-lg font-semibold">Choose Food Category:</label>
+                        
+                        <!-- Option container -->
+                        
+                        <select name="food-category" id="food-category" class="p-2 border border-gray-300 rounded-md">
+                            <option value="">Loading .....</option>
+                            
+                        </select>
+                    </div>
+                    <!-- cat start -->
+                    <div class="lg:flex gap-6 justify-center items-center ">
+                        <!-- input search -->
+                        <div class="mt-4">
+                          <input id="input-Search" class="lg:w-12/12 w-24 h-10 border rounded-lg text-white text-center placeholder:text-sm p-1 hidden" type="text" placeholder="Search ..">
+                        </div>
+                        <!-- btn -->
+                        <button id="btn-Search" type="button" class="mt-4 rounded-md p-2 bg-amber-800 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white hidden">Search</button>
+                       </div>
+                </section>
+
+                
+                </section>
+                <section class=" col-span-4">
+                    <div  class="text-center mt-6">
+                      <h2 class="text-3xl text-white mb-6">Search Your Favorite Food Recipe</h2>
+                      <!----------------------- display data container ------------------>
+                        <div id="recipe-container">
+        
+                        </div>
+                       
+                    </div>
+                </section>
+            </div>
+            <script src="/assets/js/index.js"></script>
+        </body>
+        <footer></footer>
+    </main>
+    
+</body>
+</html>
